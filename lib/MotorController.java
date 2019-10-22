@@ -37,7 +37,7 @@ public class MotorController {
     /**Sets the motor to go at a specific power during duty cycle
      * 
      **/
-    public void set(int power){
+    public void set(double power){
         m.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         m.setPower(power);
     }
