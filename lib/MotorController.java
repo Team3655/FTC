@@ -25,7 +25,7 @@ public class MotorController {
         instances.add(this);
     }
     
-    public void setPos(int pos,int power){
+    public void setPos(int pos,double power){
         m.setTargetPosition(pos);
         m.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         m.setPower(power);
